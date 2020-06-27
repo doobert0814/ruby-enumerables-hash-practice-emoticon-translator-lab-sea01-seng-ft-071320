@@ -1,7 +1,32 @@
 require 'yaml'
-
+require 'pry'
 def load_library(file_path)
   emoticons = YAML.load_file('./lib/emoticons.yml')
+  
+  new_hash = {}
+  emoticons.each do |key, value|
+end
+  #binding.pry
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=begin
    new_hash = {}
 
   emoticons.each do |key,value|
@@ -29,3 +54,4 @@ def get_english_meaning(file_path, emoticon)
   end
   emoticon ? emoticon : "Sorry, that emoticon was not found"
 end
+=end
